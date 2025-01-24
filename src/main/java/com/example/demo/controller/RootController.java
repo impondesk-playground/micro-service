@@ -18,15 +18,13 @@ public class RootController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(RootController.class);
 
 	
-	@GetMapping("/root")
+	@GetMapping("/ping")
 	public ResponseEntity<Object> ping() {
 		
-		LOGGER.info("Loading Root Data");
+		LOGGER.info("Loading Root Ping");
 		
 		
 		Map<String, Object> map = new HashMap<>();
-	    map.put("key1", "value1");
-	    map.put("key2", "value2");
 	    map.put("message", "Hello, world!");
         map.put("status", "success");
 
