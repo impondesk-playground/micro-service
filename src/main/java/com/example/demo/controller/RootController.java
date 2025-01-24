@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controller;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +19,7 @@ public class RootController {
 
 	
 	@GetMapping("/root")
-	public ResponseEntity<Object> getMethodName() {
+	public ResponseEntity<Object> ping() {
 		
 		LOGGER.info("Loading Root Data");
 		

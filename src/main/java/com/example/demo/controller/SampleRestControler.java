@@ -17,7 +17,7 @@ public class SampleRestControler {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SampleRestControler.class);
 	
 	@GetMapping("/root")
-	public ResponseEntity<Object> getMethodName() {
+	public ResponseEntity<Object> sample() {
 		
 		LOGGER.info("Loading Sample Root Data");
 		
