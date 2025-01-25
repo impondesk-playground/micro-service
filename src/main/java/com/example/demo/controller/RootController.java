@@ -1,5 +1,8 @@
 package com.example.demo.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -17,8 +20,12 @@ public class RootController {
     public String viewHomePage(Model model) {
     	LOGGER.info("Loading Root Page");
     	
+    	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+    	
         model.addAttribute("message", "Hello, world!");
         model.addAttribute("status", "success");
+        model.addAttribute("serverTime", sdf.format(new Date()));
+
         
         return "index";
     }
