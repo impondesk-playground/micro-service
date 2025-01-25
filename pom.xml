@@ -10,7 +10,7 @@
 	</parent>
 	
 	<groupId>com.example</groupId>
-	<artifactId>micro-1</artifactId>
+	<artifactId>micro-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>micro-1</name>
 	<description>Demo project for Spring Boot</description>
@@ -59,6 +59,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 	</dependencies>
 
